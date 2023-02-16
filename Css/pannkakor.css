@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow-y: hidden;
+}
+  .split.left {
+    left: 0;
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbakerbynature.com%2Fwp-content%2Fuploads%2F2014%2F06%2FIMG_6160.jpg&f=1&nofb=1&ipt=e5327c7b49e2c03cc13171e8bf53c1ca104089a1f64e0e2eaa18dbb9b9c64c6f&ipo=images');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .split.right {
+    right: 0;
+    background-color: rgba(227, 234, 203, 0.3);
+  }
