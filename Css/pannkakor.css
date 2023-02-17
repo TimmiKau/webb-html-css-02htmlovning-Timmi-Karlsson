@@ -1,25 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbakerbynature.com%2Fwp-content%2Fuploads%2F2014%2F06%2FIMG_6160.jpg&f=1&nofb=1&ipt=e5327c7b49e2c03cc13171e8bf53c1ca104089a1f64e0e2eaa18dbb9b9c64c6f&ipo=images');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 4s ease;
+}
+
+.img {
+ z-index: -1;
+}
+
+body p, h1,h2 {
+  text-align: center;
 }
 
 .split {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow-y: hidden;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 }
-  .split.left {
-    left: 0;
-    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbakerbynature.com%2Fwp-content%2Fuploads%2F2014%2F06%2FIMG_6160.jpg&f=1&nofb=1&ipt=e5327c7b49e2c03cc13171e8bf53c1ca104089a1f64e0e2eaa18dbb9b9c64c6f&ipo=images');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.split.right {
+  right: 0;
+  background-color: rgba(209, 195, 153, 0.6);
+}
+
+
+/*Cant get it to work, the picture dose not stay..*/ 
+
+@media (width:600px){
+
+  body{
+    background-position-y: 20%;
   }
-  
-  .split.right {
-    right: 0;
-    background-color: rgba(227, 234, 203, 0.3);
-  }
+}

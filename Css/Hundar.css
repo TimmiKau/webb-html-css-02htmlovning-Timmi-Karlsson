@@ -11,10 +11,14 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   margin: 0;
+  background-color: rgb(31, 105, 83);
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -22,6 +26,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 h2 {
@@ -29,6 +34,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 h5 {
@@ -41,31 +47,44 @@ h5 {
   white-space: nowrap;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .box1 {
-  background-color: rgb(202, 205, 137);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 50%;
+  text-align: center;
+  border-radius: 15px;
 }
 
 .box2 {
-    background-color: rgb(106, 172, 106);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-  }
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 50%;
+  text-align: left;
+  align-items: center;
+  border-radius: 5%;
+}
 
 .pad {
   position: relative;
   width: 100%;
   height: 4rem;
-  background: #a5ada636;
+  background: #00000036;
 }
 
 .btn {
@@ -105,26 +124,13 @@ h5 {
   height: 100%;
   overflow: hidden;
 }
-.split.left::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--left-bg-color);
-}
 .split.left {
   left: 0;
   background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdogsandcatshq.com%2Fwp-content%2Fuploads%2F2020%2F08%2Flabrador-retriever-4446566_1920-1536x1152.jpg&f=1&nofb=1&ipt=e9f93b7cdd09371e01b2e882c7a78d0c418ca8f271e34d6898550c2b2574bd4d&ipo=images');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.split.right::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--right-bg-color);
-}
+
 .split.right {
   right: 0;
   background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages3.alphacoders.com%2F104%2F1045316.jpg&f=1&nofb=1&ipt=82cb23273d5ec5e1963db0e27160fe946bb80e6302aaca295fd255bca172bc9d&ipo=images');
